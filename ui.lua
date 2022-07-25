@@ -458,6 +458,13 @@ do
 		end
 	end
 	
+	function library:destruct()
+		print(self.Name)
+		if game.CoreGui[self.Name] then
+			game.CoreGui[self.Name]:Destroy()
+		end
+	end
+	
 	function library:toggle()
 	
 		if self.toggling then
