@@ -213,7 +213,9 @@ do
 	
 	function library.new(title)
 		
-		self.container:Destroy()
+		if self.container then
+			self.container:Destroy()
+		end
 		
 		local container = utility:Create("ScreenGui", {
 			Name = title,
