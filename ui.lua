@@ -465,9 +465,7 @@ do
 	
 	function library:destruct()
 		print(self.Name)
-		if game.CoreGui[self.Name] then
-			game.CoreGui[self.Name]:Destroy()
-		end
+		self.container:Destroy()
 	end
 	
 	function library:toggle()
