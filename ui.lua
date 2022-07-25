@@ -2168,5 +2168,5 @@ do
 	end
 end
 
-print("dino was here :\)")
+print("Credits to GreenDeno for the UI Lin. Nya~")
 return library
