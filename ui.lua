@@ -212,7 +212,7 @@ do
 	-- new classes
 	
 	function library.new(title)
-		if game.CoreGui:FindFirstChild(tostring(title)) then game.CoreGui:FindFirstChild(tostring(title)):Destroy() end
+		if game.CoreGui[title] then game.CoreGui[title]:Destroy() end
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
@@ -460,7 +460,7 @@ do
 	end
 	
 	function library:destroy()
-		if game.CoreGui:FindFirstChild(tostring(title)) then game.CoreGui:FindFirstChild(tostring(title)):Destroy() end	
+		if game.CoreGui[title] then game.CoreGui[title]:Destroy() end
 	end
 	
 	function library:toggle()
