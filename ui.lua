@@ -2174,4 +2174,6 @@ do
 	end
 end
 
+print("If you find any bugs, please report them in our discord server! https://discord.gg/V7Ja3WUeT9/")
+
 return library
