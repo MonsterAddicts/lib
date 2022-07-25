@@ -213,10 +213,6 @@ do
 	
 	function library.new(title)
 		
-		if self.container then
-			self.container:Destroy()
-		end
-		
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
