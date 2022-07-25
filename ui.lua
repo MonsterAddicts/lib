@@ -465,6 +465,7 @@ do
 		if game.CoreGui:FindFirstChild(self.Name) then
 			game.CoreGui:FindFirstChild(self.Name):Destroy()
 		end
+	end
 	
 	function library:toggle()
 	
