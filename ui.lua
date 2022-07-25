@@ -212,6 +212,9 @@ do
 	-- new classes
 	
 	function library.new(title)
+		--if game.CoreGui:FindFirstChild(title) then
+		--	game.CoreGui:FindFirstChild(title):Destroy()	
+		--end
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
@@ -455,6 +458,12 @@ do
 					object[property] = color3
 				end
 			end
+		end
+	end
+	
+	function library:delete()
+		if game.CoreGui:FindFirstChild(self.Name) then
+			game.CoreGui:FindFirstChild(self.Name):Destroy()
 		end
 	end
 	
@@ -2167,5 +2176,7 @@ do
 		end
 	end
 end
+
+print(Creits to GreenDeno for the UI Lib. Nya~")
 
 return library
