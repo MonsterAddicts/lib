@@ -213,9 +213,7 @@ do
 	
 	function library.new(title)
 		
-		if game.CoreGui[title] then 
-			game.CoreGui[title]:Destroy()
-		end
+		self.container:Destroy()
 		
 		local container = utility:Create("ScreenGui", {
 			Name = title,
@@ -464,7 +462,6 @@ do
 	end
 	
 	function library:destruct()
-		print(self.Name)
 		self.container:Destroy()
 	end
 	
