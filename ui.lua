@@ -460,7 +460,9 @@ do
 	end
 	
 	function library:destruct()
-		self.container:Destroy()
+		if self and self.container then
+			self.container:Destroy()
+		end
 	end
 	
 	function library:toggle()
