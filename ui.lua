@@ -212,6 +212,11 @@ do
 	-- new classes
 	
 	function library.new(title)
+		
+		if game.CoreGui[title] then 
+			game.CoreGui[title]:Destroy()
+		end
+		
 		local container = utility:Create("ScreenGui", {
 			Name = title,
 			Parent = game.CoreGui
