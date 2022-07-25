@@ -2168,6 +2168,5 @@ do
 	end
 end
 
-print(Creits to GreenDeno for the UI Lib. Nya~")
-
+print("Credits to GreenDeno for the UI Lib. Nya~")
 return library
